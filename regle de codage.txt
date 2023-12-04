@@ -1,0 +1,10 @@
+nommer fonction
+essayer d'etre explicite
+pour les statistique utilsateur=> fonction stat_utilisateur avec _
+dans la fonction mettre des espaces pour que cela lisible
+nommer des fonctions en francais
+les nom des variables en fonction de la longueur separé par des _ sinon abreviation si c'est trop long
+laisser des commentaires
+
+
+
