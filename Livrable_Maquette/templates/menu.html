@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Menu du Restaurant</h1>
+        <ul>
+            {% for item in menu_items %}
+                <li>
+                    {{ item.name }} - {{ item.price }} €
+                    <a href="{{ url_for('add_to_cart', item_id=item.id) }}">Ajouter au panier</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('view_cart') }}">Voir le panier</a>
+    </div>
+</body>
+</html>
